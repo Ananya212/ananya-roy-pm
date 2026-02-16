@@ -51,7 +51,7 @@ title: Ananya Roy
 
         <a
           class="details"
-          href="{{ site.baseurl }}/work/phone-support.html"
+          href="{{ site.baseurl }}/work/phone-support.md"
         >
           Read case study →
         </a>
