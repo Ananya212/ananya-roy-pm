@@ -7,7 +7,7 @@ title: Ananya Roy
 
 <section class="hero-bg">
   <div class="hero">
-    <img src="{{ site.baseurl }}/assets/you.png" alt="Ananya Roy" />
+    <img src="{{ site.baseurl }}/assets/images/you.png" alt="Ananya Roy" />
 
     <div>
       <h1>Ananya Roy</h1>
