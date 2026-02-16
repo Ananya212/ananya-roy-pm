@@ -161,3 +161,12 @@ body {
     justify-content: center;
   }
 }
+
+/*Improving readability*/
+
+.case-container {
+  max-width: 680px;
+  margin: auto;
+  padding: 0 20px;
+}
+
