@@ -13,14 +13,21 @@ title: Ananya Roy
       <h1>Ananya Roy</h1>
       <p>Product Manager · 0→1 Builder · Customer-first systems</p>
 
+      <!-- CTA WITH SPACING + PLACEHOLDERS -->
       <div class="cta">
         <a href="{{ site.baseurl }}/assets/Ananya_Roy_PM_Resume.pdf" download>
           Download Resume
         </a>
-        <a href="https://www.linkedin.com/in/your-link" target="_blank">
+
+        <!-- 🔁 REPLACE WITH YOUR LINKEDIN -->
+        <a href="https://www.linkedin.com/in/YOUR_LINK_HERE" target="_blank">
           LinkedIn
         </a>
-        <a href="mailto:your@email.com">Email</a>
+
+        <!-- 🔁 REPLACE WITH YOUR EMAIL -->
+        <a href="mailto:YOUR_EMAIL_HERE">
+          Email
+        </a>
       </div>
     </div>
   </div>
@@ -33,21 +40,17 @@ title: Ananya Roy
 
   <div class="work-stack">
 
-    <!-- WORK CARD 1 -->
+    <!-- WORK 1 -->
     <div class="work-card">
       <div class="work-left">
         <h3>Phone Support for DevRev</h3>
         <p>“We love the product — but where’s the phone line?”</p>
 
-        <a
-          class="primary-btn"
-          href="{{ site.baseurl }}/work/phone-support.html"
-        >
+        <a class="primary-btn" href="{{ site.baseurl }}/work/phone-support.html">
           Read case study
         </a>
       </div>
 
-      <!-- SLIDES – VISIBLE BY DEFAULT -->
       <div class="slides">
         <div class="slide"><strong>Problem</strong><br>No voice channel</div>
         <div class="slide"><strong>Insight</strong><br>India = phone-first</div>
@@ -57,45 +60,37 @@ title: Ananya Roy
       </div>
     </div>
 
-    <!-- WORK CARD 2 -->
+    <!-- WORK 2 -->
     <div class="work-card">
       <div class="work-left">
         <h3>Abuse Detection Systems</h3>
         <p>India-first trust & safety heuristics</p>
 
-        <a
-          class="primary-btn"
-          href="{{ site.baseurl }}/work/abuse-detection.html"
-        >
+        <a class="primary-btn" href="{{ site.baseurl }}/work/abuse-detection.html">
           Read case study
         </a>
       </div>
     </div>
 
-    <!-- HIDDEN WORK -->
+    <!-- WORK 3 (HIDDEN) -->
     <div class="work-card hidden">
       <div class="work-left">
         <h3>Family Hub – Neobank</h3>
         <p>Multi-member financial controls</p>
 
-        <a
-          class="primary-btn"
-          href="{{ site.baseurl }}/work/family-hub.html"
-        >
+        <a class="primary-btn" href="{{ site.baseurl }}/work/family-hub.html">
           Read case study
         </a>
       </div>
     </div>
 
+    <!-- WORK 4 (HIDDEN) -->
     <div class="work-card hidden">
       <div class="work-left">
-        <h3>AI Support Agents</h3>
-        <p>Agent productivity automation</p>
+        <h3>AI Support Automation</h3>
+        <p>Agent productivity systems</p>
 
-        <a
-          class="primary-btn"
-          href="{{ site.baseurl }}/ai-agents.html"
-        >
+        <a class="primary-btn" href="{{ site.baseurl }}/ai-agents.html">
           View agents
         </a>
       </div>
@@ -106,16 +101,55 @@ title: Ananya Roy
   <button id="toggleWork">Show more work</button>
 </section>
 
+<!-- ================= CASE STUDIES ================= -->
+
+<section class="section subtle">
+  <h2>Case Studies</h2>
+
+  <div class="mini-grid">
+    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case1.html">
+      Phone Support Rollout
+    </a>
+    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case2.html">
+      Abuse Prevention Systems
+    </a>
+    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case3.html">
+      Neobank Family Controls
+    </a>
+  </div>
+</section>
+
+<!-- ================= AI AGENTS ================= -->
+
+<section class="section subtle">
+  <h2>AI Agents</h2>
+
+  <div class="mini-grid">
+    <a class="mini-card" href="{{ site.baseurl }}/ai/agent1.html">
+      Support Triage Agent
+    </a>
+    <a class="mini-card" href="{{ site.baseurl }}/ai/agent2.html">
+      Abuse Detection Agent
+    </a>
+    <a class="mini-card" href="{{ site.baseurl }}/ai/agent3.html">
+      Ops Copilot
+    </a>
+  </div>
+</section>
+
 <!-- ================= SCRIPT ================= -->
 
 <script>
-  document.getElementById('toggleWork').addEventListener('click', function () {
-    const hiddenCards = document.querySelectorAll('.work-card.hidden');
-    hiddenCards.forEach(card => card.classList.toggle('hidden'));
+  const toggleBtn = document.getElementById('toggleWork');
+  const hiddenCards = document.querySelectorAll('.work-card.hidden');
 
-    this.innerText =
-      this.innerText === 'Show more work'
-        ? 'Show less'
-        : 'Show more work';
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = hiddenCards[0].style.display === '' || hiddenCards[0].style.display === 'none';
+
+    hiddenCards.forEach(card => {
+      card.style.display = isHidden ? 'grid' : 'none';
+    });
+
+    toggleBtn.innerText = isHidden ? 'Show less' : 'Show more work';
   });
 </script>
