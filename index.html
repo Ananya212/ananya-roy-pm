@@ -7,24 +7,21 @@ title: Ananya Roy
 
 <section class="hero-bg">
   <div class="hero">
-    <img src="{{ site.baseurl }}/assets/images/you.png" alt="Ananya Roy" />
+    <img src="{{ site.baseurl }}/assets/you.png" alt="Ananya Roy" />
 
     <div>
       <h1>Ananya Roy</h1>
       <p>Product Manager · 0→1 Builder · Customer-first systems</p>
 
-      <!-- CTA WITH SPACING + PLACEHOLDERS -->
       <div class="cta">
         <a href="{{ site.baseurl }}/assets/Ananya_Roy_PM_Resume.pdf" download>
           Download Resume
         </a>
 
-        <!-- 🔁 REPLACE WITH YOUR LINKEDIN -->
         <a href="https://www.linkedin.com/in/YOUR_LINK_HERE" target="_blank">
           LinkedIn
         </a>
 
-        <!-- 🔁 REPLACE WITH YOUR EMAIL -->
         <a href="mailto:YOUR_EMAIL_HERE">
           Email
         </a>
@@ -35,65 +32,57 @@ title: Ananya Roy
 
 <!-- ================= WORK ================= -->
 
-<section class="section">
+<section class="section work-section">
   <h2>Selected Work</h2>
 
-  <div class="work-stack">
+  <div class="work-grid">
 
     <!-- WORK 1 -->
     <div class="work-card">
-      <div class="work-left">
-        <h3>Phone Support for DevRev</h3>
-        <p>“We love the product — but where’s the phone line?”</p>
-
-        <a class="primary-btn" href="{{ site.baseurl }}/work/phone-support.html">
-          Read case study
-        </a>
-      </div>
+      <h3>Phone Support for DevRev</h3>
+      <p>“We love the product — but where’s the phone line?”</p>
 
       <div class="slides">
-        <div class="slide"><strong>Problem</strong><br>No voice channel</div>
-        <div class="slide"><strong>Insight</strong><br>India = phone-first</div>
-        <div class="slide"><strong>Decision</strong><br>Buy vs Build</div>
-        <div class="slide"><strong>Execution</strong><br>Amazon Connect</div>
-        <div class="slide"><strong>Impact</strong><br>Deals unblocked</div>
+        <div class="slide">Problem<br><strong>No voice channel</strong></div>
+        <div class="slide">Insight<br><strong>India = phone-first</strong></div>
+        <div class="slide">Decision<br><strong>Buy vs Build</strong></div>
+        <div class="slide">Execution<br><strong>Amazon Connect</strong></div>
+        <div class="slide">Impact<br><strong>Deals unblocked</strong></div>
       </div>
+
+      <a class="primary-btn" href="{{ site.baseurl }}/work/phone-support.html">
+        Read case study
+      </a>
     </div>
 
     <!-- WORK 2 -->
     <div class="work-card">
-      <div class="work-left">
-        <h3>Abuse Detection Systems</h3>
-        <p>India-first trust & safety heuristics</p>
+      <h3>Abuse Detection Systems</h3>
+      <p>India-first trust & safety heuristics</p>
 
-        <a class="primary-btn" href="{{ site.baseurl }}/work/abuse-detection.html">
-          Read case study
-        </a>
-      </div>
+      <a class="primary-btn" href="{{ site.baseurl }}/work/abuse-detection.html">
+        Read case study
+      </a>
     </div>
 
-    <!-- WORK 3 (HIDDEN) -->
+    <!-- WORK 3 -->
     <div class="work-card hidden">
-      <div class="work-left">
-        <h3>Family Hub – Neobank</h3>
-        <p>Multi-member financial controls</p>
+      <h3>Family Hub – Neobank</h3>
+      <p>Multi-member financial controls</p>
 
-        <a class="primary-btn" href="{{ site.baseurl }}/work/family-hub.html">
-          Read case study
-        </a>
-      </div>
+      <a class="primary-btn" href="{{ site.baseurl }}/work/family-hub.html">
+        Read case study
+      </a>
     </div>
 
-    <!-- WORK 4 (HIDDEN) -->
+    <!-- WORK 4 -->
     <div class="work-card hidden">
-      <div class="work-left">
-        <h3>AI Support Automation</h3>
-        <p>Agent productivity systems</p>
+      <h3>AI Support Automation</h3>
+      <p>Agent productivity systems</p>
 
-        <a class="primary-btn" href="{{ site.baseurl }}/ai-agents.html">
-          View agents
-        </a>
-      </div>
+      <a class="primary-btn" href="{{ site.baseurl }}/ai-agents.html">
+        View agents
+      </a>
     </div>
 
   </div>
@@ -103,37 +92,25 @@ title: Ananya Roy
 
 <!-- ================= CASE STUDIES ================= -->
 
-<section class="section subtle">
+<section class="section compact">
   <h2>Case Studies</h2>
 
   <div class="mini-grid">
-    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case1.html">
-      Phone Support Rollout
-    </a>
-    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case2.html">
-      Abuse Prevention Systems
-    </a>
-    <a class="mini-card" href="{{ site.baseurl }}/case-studies/case3.html">
-      Neobank Family Controls
-    </a>
+    <a class="mini-card" href="#">Phone Support Rollout</a>
+    <a class="mini-card" href="#">Abuse Prevention Systems</a>
+    <a class="mini-card" href="#">Neobank Family Controls</a>
   </div>
 </section>
 
 <!-- ================= AI AGENTS ================= -->
 
-<section class="section subtle">
+<section class="section compact">
   <h2>AI Agents</h2>
 
   <div class="mini-grid">
-    <a class="mini-card" href="{{ site.baseurl }}/ai/agent1.html">
-      Support Triage Agent
-    </a>
-    <a class="mini-card" href="{{ site.baseurl }}/ai/agent2.html">
-      Abuse Detection Agent
-    </a>
-    <a class="mini-card" href="{{ site.baseurl }}/ai/agent3.html">
-      Ops Copilot
-    </a>
+    <a class="mini-card" href="#">Support Triage Agent</a>
+    <a class="mini-card" href="#">Abuse Detection Agent</a>
+    <a class="mini-card" href="#">Ops Copilot</a>
   </div>
 </section>
 
@@ -144,10 +121,12 @@ title: Ananya Roy
   const hiddenCards = document.querySelectorAll('.work-card.hidden');
 
   toggleBtn.addEventListener('click', () => {
-    const isHidden = hiddenCards[0].style.display === '' || hiddenCards[0].style.display === 'none';
+    const isHidden =
+      hiddenCards[0].style.display === '' ||
+      hiddenCards[0].style.display === 'none';
 
     hiddenCards.forEach(card => {
-      card.style.display = isHidden ? 'grid' : 'none';
+      card.style.display = isHidden ? 'block' : 'none';
     });
 
     toggleBtn.innerText = isHidden ? 'Show less' : 'Show more work';
