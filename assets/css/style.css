@@ -9,8 +9,8 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  color: var(--ink);
   background: linear-gradient(180deg, #f8fafc, #ffffff);
+  color: var(--ink);
 }
 
 /* ---------- HERO ---------- */
@@ -26,20 +26,12 @@ body {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 24px;
-  align-items: center;
 }
 
 .hero img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-}
-
-.cta a {
-  margin-right: 16px;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
 }
 
 /* ---------- SECTIONS ---------- */
@@ -50,94 +42,61 @@ body {
   padding: 64px 20px;
 }
 
-.section.secondary {
-  padding-top: 32px;
-}
-
 /* ---------- WORK CARDS ---------- */
 
 .work-stack {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
 }
 
 .work-card {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.4fr;
   background: white;
   border-radius: 20px;
-  padding: 28px;
+  padding: 32px;
   border: 1px solid var(--border);
-  min-height: 280px;
+  min-height: 320px;
 }
 
-.work-left button {
-  margin-top: 12px;
+.work-left p {
+  color: var(--muted);
+}
+
+/* ---------- PRIMARY BUTTON ---------- */
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
   background: var(--accent);
   color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
 }
+
+/* ---------- SLIDES ---------- */
 
 .slides {
-  display: none;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.slides.open {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
 }
 
 .slide {
   background: var(--soft);
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 14px;
+  padding: 18px;
   font-size: 0.9rem;
 }
+
+/* ---------- TOGGLE ---------- */
 
 .hidden {
   display: none;
 }
-
-/* ---------- MINI CARDS ---------- */
-
-.mini-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-.mini-card {
-  display: block;
-  padding: 18px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: #fff;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.mini-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.mini-card h4 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-}
-
-.mini-card p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-/* ---------- BUTTON ---------- */
 
 #toggleWork {
   margin-top: 24px;
