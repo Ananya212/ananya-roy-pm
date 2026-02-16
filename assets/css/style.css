@@ -34,12 +34,31 @@ body {
   border-radius: 50%;
 }
 
+/* ---------- CTA SPACING ---------- */
+
+.cta {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.cta a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--accent);
+}
+
 /* ---------- SECTIONS ---------- */
 
 .section {
   max-width: 900px;
   margin: auto;
   padding: 64px 20px;
+}
+
+.section.subtle {
+  padding-top: 32px;
 }
 
 /* ---------- WORK CARDS ---------- */
@@ -92,11 +111,25 @@ body {
   font-size: 0.9rem;
 }
 
-/* ---------- TOGGLE ---------- */
+/* ---------- MINI CARDS ---------- */
 
-.hidden {
-  display: none;
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
 }
+
+.mini-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ---------- TOGGLE ---------- */
 
 #toggleWork {
   margin-top: 24px;
@@ -117,5 +150,9 @@ body {
 
   .work-card {
     grid-template-columns: 1fr;
+  }
+
+  .cta {
+    justify-content: center;
   }
 }
