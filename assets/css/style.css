@@ -170,3 +170,59 @@ body {
   padding: 0 20px;
 }
 
+.case-container p,
+.case-container li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.case-container ul {
+  padding-left: 20px;
+}
+
+.case-container h2 {
+  font-size: 1.6rem;
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.case-container h3 {
+  font-size: 1.25rem;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.case-container h4 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #475569;
+}
+
+.highlight {
+  margin: 32px 0;
+  padding: 24px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: #eef2ff;
+  border-radius: 16px;
+}
+
+.case-container blockquote {
+  margin: 28px 0;
+  padding-left: 20px;
+  border-left: 4px solid #c7d2fe;
+  font-style: italic;
+  color: #475569;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+
