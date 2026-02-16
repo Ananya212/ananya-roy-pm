@@ -4,7 +4,7 @@ title: Ananya Roy — Product Manager
 ---
 
 <div class="hero">
-  <img src="{{ site.baseurl }}/assets/profile.jpg" alt="Ananya Roy">
+  <img src="{{ site.baseurl }}/assets/profile.png" alt="Ananya Roy">
   <div>
     <h1>Ananya Roy</h1>
     <p>
