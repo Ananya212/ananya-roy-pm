@@ -97,3 +97,79 @@ title: Ananya Roy
           class="details"
           href="{{ site.baseurl }}/ai-agents.html"
         >
+          View agents →
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <button id="toggleWork" onclick="toggleWork()">Show more work</button>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+
+<section class="section secondary">
+  <h2>More Case Studies</h2>
+
+  <div class="mini-cards">
+    <a class="mini-card" href="{{ site.baseurl }}/work/phone-support.html">
+      <h4>Phone Support</h4>
+      <p>0→1 voice channel</p>
+    </a>
+
+    <a class="mini-card" href="{{ site.baseurl }}/work/abuse-detection.html">
+      <h4>Abuse Detection</h4>
+      <p>Trust & safety systems</p>
+    </a>
+
+    <a class="mini-card" href="{{ site.baseurl }}/work/family-hub.html">
+      <h4>Family Hub</h4>
+      <p>Neobank controls</p>
+    </a>
+  </div>
+</section>
+
+<!-- ================= AI AGENTS ================= -->
+
+<section class="section secondary">
+  <h2>AI Agents</h2>
+
+  <div class="mini-cards">
+    <a class="mini-card" href="{{ site.baseurl }}/ai-agents.html">
+      <h4>Support Agent</h4>
+      <p>Ticket + call automation</p>
+    </a>
+
+    <a class="mini-card" href="{{ site.baseurl }}/ai-agents.html">
+      <h4>Moderation Agent</h4>
+      <p>Abuse triage</p>
+    </a>
+
+    <a class="mini-card" href="{{ site.baseurl }}/ai-agents.html">
+      <h4>Ops Agent</h4>
+      <p>Workflow routing</p>
+    </a>
+  </div>
+</section>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script>
+  function toggleWork() {
+    document.querySelectorAll('.work-card.hidden').forEach(card => {
+      card.classList.toggle('hidden');
+    });
+
+    const btn = document.getElementById('toggleWork');
+    btn.innerText =
+      btn.innerText === 'Show more work'
+        ? 'Show less'
+        : 'Show more work';
+  }
+
+  function openSlides(button) {
+    const slides = button.closest('.work-card').querySelector('.slides');
+    slides.classList.toggle('open');
+  }
+</script>
