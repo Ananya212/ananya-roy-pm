@@ -105,3 +105,29 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.section.muted {
+  padding-top: 40px;
+  color: #475569;
+}
+
+.simple-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-list li {
+  margin-bottom: 10px;
+}
+
+.simple-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.simple-list a:hover {
+  text-decoration: underline;
+}
+
