@@ -2,259 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <style>
-    :root {
-      --accent: #4f46e5;
-      --accent-soft: #eef2ff;
-      --bg-main: #f8fafc;
-      --card-bg: #ffffff;
-      --text-main: #0a0a0a;
-      --text-muted: #6b7280;
-      --border: #e5e7eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px 120px;
-      position: relative;
-    }
-
-    /* ---------- BACKGROUND SHAPES ---------- */
-
-    .bg-shape {
-      position: absolute;
-      top: -100px;
-      right: -100px;
-      width: 300px;
-      height: 300px;
-      background: var(--accent-soft);
-      border-radius: 50%;
-      z-index: -1;
-    }
-
-    /* ---------- HERO ---------- */
-
-    .hero {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 32px;
-      align-items: center;
-      padding: 36px;
-      background: var(--card-bg);
-      border-radius: 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-    }
-
-    .hero img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-soft);
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      letter-spacing: -0.02em;
-    }
-
-    .hero p {
-      margin: 12px 0 20px;
-      color: var(--text-muted);
-      max-width: 650px;
-      font-size: 1.05rem;
-    }
-
-    .cta a {
-      margin-right: 20px;
-      font-size: 0.95rem;
-      color: var(--accent);
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    /* ---------- SECTIONS ---------- */
-
-    .section {
-      margin-top: 90px;
-    }
-
-    .section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 28px;
-    }
-
-    /* ---------- WORK CARDS ---------- */
-
-    .work-carousel {
-      display: flex;
-      gap: 24px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-      scroll-snap-type: x mandatory;
-    }
-
-    .work-card {
-      min-width: 420px;
-      max-width: 420px;
-      height: 520px;
-      background: var(--card-bg);
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-      scroll-snap-align: start;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .work-meta {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .work-card h3 {
-      margin: 12px 0 10px;
-      font-size: 1.3rem;
-    }
-
-    .work-card p {
-      font-size: 0.95rem;
-      color: #374151;
-    }
-
-    /* ---------- MINI SLIDES ---------- */
-
-    .slides {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      margin: 16px 0;
-    }
-
-    .slide {
-      min-width: 160px;
-      height: 100px;
-      border-radius: 12px;
-      background: linear-gradient(
-        135deg,
-        var(--accent-soft),
-        #ffffff
-      );
-      border: 1px solid var(--border);
-      padding: 10px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-    }
-
-    .view-link {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    /* ---------- SHOW MORE ---------- */
-
-    .hidden {
-      display: none;
-    }
-
-    .show-more {
-      margin-top: 20px;
-      color: var(--accent);
-      cursor: pointer;
-      font-size: 0.95rem;
-    }
-
-    /* ---------- SECONDARY CARDS ---------- */
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      padding: 18px;
-      border-radius: 18px;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card h3 {
-      margin: 8px 0;
-      font-size: 1.05rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    /* ---------- MOBILE ---------- */
-
-    @media (max-width: 700px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero img {
-        margin: 0 auto;
-      }
-
-      .work-card {
-        min-width: 320px;
-        height: 520px;
-      }
-    }
-  </style>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
-  <div class="bg-shape"></div>
-  <main>
+
+  <!-- Background shapes -->
+  <div class="bg-circle bg-circle-1"></div>
+  <div class="bg-circle bg-circle-2"></div>
+
+  <main class="container">
     {{ content }}
   </main>
 
   <script>
+    function showSlide(cardId, index) {
+      const slides = document.querySelectorAll(`#${cardId} .slide`);
+      const dots = document.querySelectorAll(`#${cardId} .dot`);
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+      dots.forEach((d, i) => d.classList.toggle("active", i === index));
+    }
+
     function toggleWork() {
-      document.querySelectorAll('.extra-work').forEach(el => {
-        el.classList.toggle('hidden');
-      });
+      const hidden = document.getElementById("more-work");
+      const btn = document.getElementById("toggle-work-btn");
+
+      if (hidden.style.display === "grid") {
+        hidden.style.display = "none";
+        btn.innerText = "Show more work ↓";
+      } else {
+        hidden.style.display = "grid";
+        btn.innerText = "Show less ↑";
+      }
     }
   </script>
+
 </body>
 </html>
