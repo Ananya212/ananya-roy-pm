@@ -162,7 +162,11 @@ body {
   }
 }
 
-/*Improving readability*/
+/* ================= CASE STUDY PAGE ================= */
+
+.case-page {
+  padding: 64px 0;
+}
 
 .case-container {
   max-width: 680px;
@@ -170,6 +174,7 @@ body {
   padding: 0 20px;
 }
 
+/* Text readability */
 .case-container p,
 .case-container li {
   font-size: 1.05rem;
@@ -181,6 +186,7 @@ body {
   padding-left: 20px;
 }
 
+/* Headings */
 .case-container h2 {
   font-size: 1.6rem;
   margin-top: 56px;
@@ -194,27 +200,45 @@ body {
 }
 
 .case-container h4 {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: #475569;
 }
 
+/* Highlight blocks */
 .highlight {
   margin: 32px 0;
   padding: 24px;
-  font-size: 1.1rem;
-  line-height: 1.6;
   background: #eef2ff;
   border-radius: 16px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.case-container blockquote {
-  margin: 28px 0;
-  padding-left: 20px;
-  border-left: 4px solid #c7d2fe;
-  font-style: italic;
-  color: #475569;
+/* Context grid */
+.context-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 14px;
+  margin: 24px 0;
+}
+
+/* Two-column sections */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
 }
 
 .card {
@@ -225,4 +249,17 @@ body {
   font-size: 0.95rem;
 }
 
+/* Impact section */
+.impact {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 24px;
+}
 
+/* Mobile */
+@media (max-width: 720px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
