@@ -1,94 +1,128 @@
 ---
-layout: default
-title: Giving Customers a Voice — Literally
+layout: case
+title: Phone Support for DevRev
 ---
-# Giving Customers a Voice — Literally
-### 0→1 Phone Support for DevRev’s Support App
 
-**Role:** Product Manager  
-**Scope:** 0→1 Platform Feature  
-**Market:** India + Global
+## Giving customers a voice — literally
+
+**0→1 launch of phone support** in DevRev’s Support App to unblock India-first SMB adoption and close high-intent deals.
 
 ---
 
-## “Great product—but where’s phone support?”
+### 📌 Context
 
-Despite strong interest in the Support App, sales conversations—especially in India—
-repeatedly stalled due to the absence of phone support.
-
-- **80–90%** of Indian SMBs rely on phone support  
-- **65%** prefer voice for complex issues  
-- Deals dropped before onboarding
-
----
-
-## Key Insight
-
-> Voice isn’t just another channel—it’s the most trusted and human way to resolve issues.  
-> Without it, the Support App couldn’t compete in India or enterprise sales cycles.
+<div class="context-grid">
+  <div><strong>Company</strong><br>DevRev</div>
+  <div><strong>Product</strong><br>Support App</div>
+  <div><strong>My role</strong><br>Product Manager</div>
+  <div><strong>Scope</strong><br>0→1, Vendor-led</div>
+</div>
 
 ---
 
-## Strategic Decision — Build vs Buy
+## The problem
 
-**Build**
-- Full control
-- High infra & compliance cost
-- Slow time-to-market
+> “We love the product — but where’s the phone line?”
 
-**Buy**
-- Faster launch
-- Proven reliability
-- Acceptable branding tradeoffs
+Despite strong interest, **sales deals were stalling** because the Support App lacked a phone channel.
 
-**Decision:** Buy — speed to value mattered more than ownership.
+- 80–90% of Indian SMBs rely on phone-based support  
+- Voice is preferred for **urgent and complex issues**
+- Competing tools offered phone support by default
+
+Without voice, DevRev wasn’t even considered.
 
 ---
 
-## Vendor Evaluation
+## Key insight
 
-**Chosen:** Amazon Connect  
-- Native AWS ecosystem fit  
-- Transparent pricing  
-- Strong India roadmap  
+<div class="highlight">
+Phone support isn’t just another channel —  
+<strong>it’s a trust signal in India</strong>.
+</div>
 
----
-
-## Solution
-
-- Voice embedded directly inside the Support App
-- Support for new, migrating, and existing voice customers
-- Seamless UI with co-branding
+Additionally, we uncovered a second-order problem:
+- Agents spent **more time after calls** (notes, tagging, ticket linking)
+- This hurt resolution time and agent efficiency
 
 ---
 
-## Differentiator — AI After the Call
+## The decision: Build vs Buy
 
-- Auto-generated call notes  
-- Ticket linking  
-- Issue tagging  
+<div class="two-col">
+  <div>
+    <h4>Build</h4>
+    <ul>
+      <li>Full branding control</li>
+      <li>High infra & compliance cost</li>
+      <li>Slow time to market</li>
+    </ul>
+  </div>
 
-_Became the “wow moment” in demos._
+  <div>
+    <h4>Buy</h4>
+    <ul>
+      <li>Faster launch</li>
+      <li>Battle-tested reliability</li>
+      <li>Tradeoff on branding</li>
+    </ul>
+  </div>
+</div>
+
+**Call:** Buy  
+Speed mattered more than control.
+
+---
+
+## Vendor evaluation
+
+We shortlisted **Twilio vs Amazon Connect**.
+
+**Why Amazon Connect won:**
+- Native AWS integration (already trusted)
+- Clear India expansion roadmap
+- Transparent usage-based pricing
+- Enterprise-grade reliability
+
+I aligned engineering, leadership, and sales before final recommendation.
+
+---
+
+## Execution highlights
+
+<div class="card-grid">
+  <div class="card">Customer onboarding for 3 segments</div>
+  <div class="card">Native UI integration with DevRev</div>
+  <div class="card">Sales & marketing positioning</div>
+  <div class="card">Setup docs for first-time users</div>
+</div>
 
 ---
 
 ## Impact
 
-- Unblocked adoption in India & globally  
-- Removed a major sales blocker  
-- Delivered a 0→1 platform capability  
+<div class="impact">
+  <ul>
+    <li>Unblocked India-first SMB deals</li>
+    <li>Removed top sales objection</li>
+    <li>Improved agent productivity via AI post-call automation</li>
+    <li>Created a “wow moment” in demos</li>
+  </ul>
+</div>
 
 ---
 
-## What I Owned
+## What made this work
 
-- Problem discovery with Sales  
-- Build vs Buy decision  
-- Vendor evaluation  
-- Cross-functional execution  
+- Customer-led discovery
+- Strong build vs buy judgment
+- Tight cross-functional alignment
+- Focus on second-order efficiency gains
 
 ---
 
-## Reflection
+## What I’d do next
 
-Speed to value beats building everything yourself—especially for customer-critical gaps.
+- Deeper call analytics for QA
+- Smarter routing based on issue type
+- Voice → ticket auto-resolution loops
