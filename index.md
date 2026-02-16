@@ -162,3 +162,53 @@ title: Ananya Roy
     slides.classList.toggle('open');
   }
 </script>
+
+<!-- ================= CASE STUDIES ================= -->
+
+<section class="section muted">
+  <h2>Case Studies</h2>
+
+  <ul class="simple-list">
+    <li>
+      <a href="{{ site.baseurl }}/work/phone-support.html">
+        Phone Support (0→1) – DevRev
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/work/abuse-detection.html">
+        Abuse Detection Systems
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/work/family-hub.html">
+        Family Hub – Neobank
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ================= AI AGENTS ================= -->
+
+<section class="section muted">
+  <h2>AI Agents</h2>
+
+  <ul class="simple-list">
+    <li>
+      <a href="{{ site.baseurl }}/ai-agents.html">
+        Support Automation Agent
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/ai-agents.html">
+        Content Moderation Agent
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/ai-agents.html">
+        Ops Triage Agent
+      </a>
+    </li>
+  </ul>
+</section>
+
+
