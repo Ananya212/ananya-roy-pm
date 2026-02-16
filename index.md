@@ -22,88 +22,114 @@ title: Ananya Roy — Product Manager
 <section class="section">
   <h2>Selected Work</h2>
   <div class="subtitle">
-    Horizontally scroll — each card is a story. Click to go deeper.
+    A quick visual walkthrough. Scroll inside cards. Click to deep dive.
   </div>
 
   <div class="work-carousel">
     <a class="work-card" href="work/phone-support">
-      <div class="work-meta">0 → 1 · Platform</div>
-      <h3>Giving Customers a Voice — Literally</h3>
-      <p>
-        Added phone support to unblock SMB adoption and unlock critical revenue.
-      </p>
+      <div>
+        <div class="work-meta">0 → 1 · Platform</div>
+        <h3>Giving Customers a Voice — Literally</h3>
+        <p>Launched phone support to unblock SMB adoption.</p>
+
+        <div class="slides">
+          <div class="slide">Problem: No voice channel</div>
+          <div class="slide">Insight: India SMBs prefer calls</div>
+          <div class="slide">Decision: Buy vs Build</div>
+          <div class="slide">Execution: Amazon Connect</div>
+          <div class="slide">Impact: Deals unblocked</div>
+        </div>
+      </div>
+      <div class="view-link">View full case →</div>
     </a>
 
     <a class="work-card" href="work/work-2">
-      <div class="work-meta">Growth</div>
-      <h3>Work Item Two</h3>
-      <p>
-        Improved conversion by removing a key onboarding bottleneck.
-      </p>
+      <div>
+        <div class="work-meta">Growth</div>
+        <h3>Onboarding Conversion Fix</h3>
+        <p>Removed friction points killing activation.</p>
+
+        <div class="slides">
+          <div class="slide">Drop-off identified</div>
+          <div class="slide">User interviews</div>
+          <div class="slide">Flow redesign</div>
+          <div class="slide">A/B test</div>
+          <div class="slide">+18% activation</div>
+        </div>
+      </div>
+      <div class="view-link">View full case →</div>
     </a>
 
-    <a class="work-card" href="work/work-3">
-      <div class="work-meta">Internal Tools</div>
-      <h3>Work Item Three</h3>
-      <p>
-        Reduced ops effort through workflow automation.
-      </p>
+    <a class="work-card extra-work hidden" href="work/work-3">
+      <div>
+        <div class="work-meta">Internal Tools</div>
+        <h3>Ops Automation</h3>
+        <p>Reduced manual effort for support teams.</p>
+
+        <div class="slides">
+          <div class="slide">Manual pain points</div>
+          <div class="slide">Workflow mapping</div>
+          <div class="slide">Automation rules</div>
+          <div class="slide">Rollout</div>
+          <div class="slide">40% time saved</div>
+        </div>
+      </div>
+      <div class="view-link">View full case →</div>
     </a>
 
-    <a class="work-card" href="work/work-4">
-      <div class="work-meta">AI · Productivity</div>
-      <h3>Work Item Four</h3>
-      <p>
-        Used AI to eliminate repetitive agent work.
-      </p>
+    <a class="work-card extra-work hidden" href="work/work-4">
+      <div>
+        <div class="work-meta">AI · Productivity</div>
+        <h3>Post-call Automation</h3>
+        <p>AI that writes notes & tags tickets.</p>
+
+        <div class="slides">
+          <div class="slide">Call transcripts</div>
+          <div class="slide">LLM summaries</div>
+          <div class="slide">Auto-tagging</div>
+          <div class="slide">Agent trust</div>
+          <div class="slide">Demo wow moment</div>
+        </div>
+      </div>
+      <div class="view-link">View full case →</div>
     </a>
   </div>
+
+  <div class="show-more" onclick="toggleWork()">Show more work ↓</div>
 </section>
 
 <section class="section">
   <h2>Case Studies</h2>
-  <div class="subtitle">
-    Deep dives into problem framing, trade-offs, and outcomes.
-  </div>
-
   <div class="cards">
     <a class="card" href="case-studies/case-1">
-      <h3>Case Study One</h3>
-      <p>Discovery → delivery narrative.</p>
+      <h3>Discovery to Delivery</h3>
+      <p>Problem framing & trade-offs.</p>
     </a>
-
     <a class="card" href="case-studies/case-2">
-      <h3>Case Study Two</h3>
-      <p>Strategy under ambiguity.</p>
+      <h3>Strategy Under Constraints</h3>
+      <p>Prioritisation & alignment.</p>
     </a>
-
     <a class="card" href="case-studies/case-3">
-      <h3>Case Study Three</h3>
-      <p>Execution with cross-functional teams.</p>
+      <h3>Execution at Scale</h3>
+      <p>Shipping with cross-functional teams.</p>
     </a>
   </div>
 </section>
 
 <section class="section">
-  <h2>AI Agents & Experiments</h2>
-  <div class="subtitle">
-    Hands-on experiments exploring AI-driven workflows.
-  </div>
-
+  <h2>AI Agents</h2>
   <div class="cards">
     <a class="card" href="ai-agents/agent-1">
-      <h3>Agent One</h3>
-      <p>Automates a real PM task.</p>
+      <h3>PM Assistant</h3>
+      <p>Automates planning tasks.</p>
     </a>
-
     <a class="card" href="ai-agents/agent-2">
-      <h3>Agent Two</h3>
-      <p>Exploring autonomous flows.</p>
+      <h3>Support Copilot</h3>
+      <p>Improves agent efficiency.</p>
     </a>
-
     <a class="card" href="ai-agents/agent-3">
-      <h3>Agent Three</h3>
-      <p>Prototype & learn.</p>
+      <h3>Insight Miner</h3>
+      <p>Extracts trends from data.</p>
     </a>
   </div>
 </section>
