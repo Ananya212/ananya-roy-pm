@@ -13,9 +13,11 @@ body {
   background: linear-gradient(180deg, #f8fafc, #ffffff);
 }
 
+/* ---------- HERO ---------- */
+
 .hero-bg {
   background: radial-gradient(circle at top left, #e0e7ff, #ffffff);
-  padding: 60px 20px;
+  padding: 64px 20px;
 }
 
 .hero {
@@ -33,11 +35,26 @@ body {
   border-radius: 50%;
 }
 
+.cta a {
+  margin-right: 16px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ---------- SECTIONS ---------- */
+
 .section {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 64px 20px;
 }
+
+.section.secondary {
+  padding-top: 32px;
+}
+
+/* ---------- WORK CARDS ---------- */
 
 .work-stack {
   display: flex;
@@ -47,20 +64,20 @@ body {
 
 .work-card {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1.3fr;
   background: white;
   border-radius: 20px;
   padding: 28px;
   border: 1px solid var(--border);
-  min-height: 260px;
+  min-height: 280px;
 }
 
 .work-left button {
   margin-top: 12px;
-  padding: 8px 12px;
   background: var(--accent);
   color: white;
   border: none;
+  padding: 8px 12px;
   border-radius: 8px;
 }
 
@@ -85,6 +102,43 @@ body {
   display: none;
 }
 
+/* ---------- MINI CARDS ---------- */
+
+.mini-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.mini-card {
+  display: block;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.mini-card h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.mini-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------- BUTTON ---------- */
+
 #toggleWork {
   margin-top: 24px;
   background: none;
@@ -94,7 +148,8 @@ body {
   cursor: pointer;
 }
 
-/* Mobile */
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 700px) {
   .hero {
     grid-template-columns: 1fr;
@@ -105,29 +160,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-.section.muted {
-  padding-top: 40px;
-  color: #475569;
-}
-
-.simple-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.simple-list li {
-  margin-bottom: 10px;
-}
-
-.simple-list a {
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.simple-list a:hover {
-  text-decoration: underline;
-}
-
