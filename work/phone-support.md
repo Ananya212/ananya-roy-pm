@@ -2,7 +2,8 @@
 layout: case
 title: Phone Support for DevRev
 ---
-
+<div class="case-container">
+  
 ## Giving customers a voice — literally
 
 **0→1 launch of phone support** in DevRev’s Support App to unblock India-first SMB adoption and close high-intent deals.
@@ -126,3 +127,5 @@ I aligned engineering, leadership, and sales before final recommendation.
 - Deeper call analytics for QA
 - Smarter routing based on issue type
 - Voice → ticket auto-resolution loops
+
+</div>
