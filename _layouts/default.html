@@ -8,8 +8,9 @@
   <style>
     :root {
       --accent: #4f46e5;
-      --bg-soft: #f5f7ff;
-      --bg-card: #ffffff;
+      --accent-soft: #eef2ff;
+      --bg-main: #f8fafc;
+      --card-bg: #ffffff;
       --text-main: #0a0a0a;
       --text-muted: #6b7280;
       --border: #e5e7eb;
@@ -22,27 +23,41 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
-      background: linear-gradient(180deg, var(--bg-soft), #ffffff 40%);
+      background: var(--bg-main);
       color: var(--text-main);
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 20px 100px;
+      padding: 40px 20px 120px;
+      position: relative;
     }
 
-    /* ---------------- HERO ---------------- */
+    /* ---------- BACKGROUND SHAPES ---------- */
+
+    .bg-shape {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--accent-soft);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    /* ---------- HERO ---------- */
 
     .hero {
       display: grid;
       grid-template-columns: 120px 1fr;
-      gap: 28px;
+      gap: 32px;
       align-items: center;
-      padding: 32px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      padding: 36px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
     }
 
     .hero img {
@@ -50,119 +65,150 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
+      border: 3px solid var(--accent-soft);
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       letter-spacing: -0.02em;
     }
 
     .hero p {
-      margin: 10px 0 18px;
+      margin: 12px 0 20px;
       color: var(--text-muted);
-      max-width: 600px;
+      max-width: 650px;
+      font-size: 1.05rem;
     }
 
     .cta a {
-      margin-right: 18px;
+      margin-right: 20px;
       font-size: 0.95rem;
       color: var(--accent);
       font-weight: 500;
       text-decoration: none;
     }
 
-    .cta a:hover {
-      text-decoration: underline;
-    }
-
-    /* ---------------- SECTIONS ---------------- */
+    /* ---------- SECTIONS ---------- */
 
     .section {
-      margin-top: 80px;
+      margin-top: 90px;
     }
 
     .section h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 8px;
     }
 
-    .section .subtitle {
+    .subtitle {
       color: var(--text-muted);
       font-size: 0.95rem;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
-    /* ---------------- WORK CAROUSEL ---------------- */
+    /* ---------- WORK CARDS ---------- */
 
     .work-carousel {
       display: flex;
-      gap: 20px;
+      gap: 24px;
       overflow-x: auto;
       padding-bottom: 10px;
       scroll-snap-type: x mandatory;
     }
 
     .work-card {
-      min-width: 300px;
-      max-width: 300px;
-      background: var(--bg-card);
-      border-radius: 20px;
-      padding: 24px;
-      scroll-snap-align: start;
+      min-width: 420px;
+      max-width: 420px;
+      height: 520px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 22px;
       border: 1px solid var(--border);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       text-decoration: none;
       color: inherit;
-      position: relative;
-    }
-
-    .work-card::after {
-      content: "→";
-      position: absolute;
-      bottom: 20px;
-      right: 24px;
-      color: var(--accent);
-      font-size: 1.2rem;
     }
 
     .work-meta {
       font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
+      color: var(--accent);
     }
 
     .work-card h3 {
-      margin: 14px 0 10px;
-      font-size: 1.2rem;
+      margin: 12px 0 10px;
+      font-size: 1.3rem;
     }
 
     .work-card p {
+      font-size: 0.95rem;
       color: #374151;
+    }
+
+    /* ---------- MINI SLIDES ---------- */
+
+    .slides {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    .slide {
+      min-width: 160px;
+      height: 100px;
+      border-radius: 12px;
+      background: linear-gradient(
+        135deg,
+        var(--accent-soft),
+        #ffffff
+      );
+      border: 1px solid var(--border);
+      padding: 10px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+    }
+
+    .view-link {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- SHOW MORE ---------- */
+
+    .hidden {
+      display: none;
+    }
+
+    .show-more {
+      margin-top: 20px;
+      color: var(--accent);
+      cursor: pointer;
       font-size: 0.95rem;
     }
 
-    .reveal {
-      margin-top: 16px;
-      font-size: 0.9rem;
-      color: var(--accent);
-      cursor: pointer;
-    }
-
-    /* ---------------- SECONDARY CARDS ---------------- */
+    /* ---------- SECONDARY CARDS ---------- */
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
     .card {
       padding: 18px;
+      border-radius: 18px;
+      background: #ffffff;
       border: 1px solid var(--border);
-      border-radius: 16px;
-      background: white;
       text-decoration: none;
       color: inherit;
     }
@@ -177,7 +223,7 @@
       color: var(--text-muted);
     }
 
-    /* ---------------- MOBILE ---------------- */
+    /* ---------- MOBILE ---------- */
 
     @media (max-width: 700px) {
       .hero {
@@ -188,13 +234,27 @@
       .hero img {
         margin: 0 auto;
       }
+
+      .work-card {
+        min-width: 320px;
+        height: 520px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="bg-shape"></div>
   <main>
     {{ content }}
   </main>
+
+  <script>
+    function toggleWork() {
+      document.querySelectorAll('.extra-work').forEach(el => {
+        el.classList.toggle('hidden');
+      });
+    }
+  </script>
 </body>
 </html>
